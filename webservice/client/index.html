@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="APIAPP">
+	<head>
+		<title>Weather Forecast</title>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		 <!-- Custom styles for this template -->
+	    <link href="css/dashboard.css" rel="stylesheet">
+		<!-- Latest compiled and minified JavaScript -->
+
+		<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js'></script>
+		<script type="text/javascript" src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js'></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<!-- app javascript files -->
+		<script type="text/javascript" src='api_app.js'></script>
+		<script type="text/javascript" src='main/main.js'></script>
+		<script type="text/javascript" src='main/controllers/MainController.js'></script>
+	</head>
+	<body ng-controller="MianController">
+	  <nav class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="container-fluid">
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="/">Weather API TEST</a>
+	      </div>
+	      <div id="navbar" class="navbar-collapse collapse">
+	      </div>
+	    </div>
+	  </nav>
+
+	  <div class="container-fluid">
+	    <div class="row">
+	      <div class="col-sm-3 col-md-2 sidebar">
+	        <ul class="nav nav-sidebar">
+	          
+	        </ul>
+	      </div>
+	      <div ng-view="" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" id='main-content'>
+
+	      </div>
+	    </div>
+	  </div>
+
+	  <!-- Bootstrap core JavaScript
+	  ================================================== -->
+	 
+	</body>
+</html>
